@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wKW5x3tDf+S/n5uHzqOKPAxMly32AXi2HZavdzNXIbtJ32LHsHJ5IFQtbJEkYy5Kh5fF16o0ZpaXMF6HcL5hjw==",
+  "dgSpecHash": "F0L2E2FA3GhWTUbryA6r5hbQl+yrSUfdraZSN6scflqzyuj9EM/mpKxypRfR8hISrV+UdWUs/MZ8eXIw3w1JtA==",
   "success": true,
   "projectFilePath": "D:\\Prpjects\\ApiGateWay\\APIJWTLayerProj3\\APIJWTLayerProj\\APIJWTLayerProj.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,8 @@
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.0.0\\microsoft.aspnetcore.mvc.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.0.0\\microsoft.aspnetcore.mvc.core.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.0.0-preview3-19153-02\\microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0-preview3-19153-02.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.0\\microsoft.aspnetcore.mvc.razor.extensions.3.1.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.0\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",

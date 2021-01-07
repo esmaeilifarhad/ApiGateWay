@@ -26,11 +26,12 @@ namespace APIJWTLayerProj.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public User Login([FromBody] UserDto user)
+        public ActionResult Login([FromBody] UserDto user)
         {
-            var User = _userService.Authenticate(user.Username, user.Password);
-
-            return User;
+            var res = _userService.Authenticate(user.Username, user.Password);
+            if (res == null)
+                return Unauthorized();
+            return Ok(res.token);
         }
 
         [Authorize(Roles = "Admin")]

@@ -35,7 +35,11 @@ namespace APIJWTLayerProj.Services
             var user = users.FirstOrDefault();
             // return null if user not found
             if (user == null)
+            {
+                //return StatusCode(statusCode);
                 return null;
+            }
+
 
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
