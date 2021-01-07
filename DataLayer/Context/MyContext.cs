@@ -1,5 +1,6 @@
 ﻿
 using DomainClass.Model;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace DataLayer.Context
 {
-   public class MyContext:DbContext
+   public class MyContext:IdentityDbContext
     {
       public  DbSet<User> User { get; set; }
         public DbSet<Role> Role { get; set; }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F0L2E2FA3GhWTUbryA6r5hbQl+yrSUfdraZSN6scflqzyuj9EM/mpKxypRfR8hISrV+UdWUs/MZ8eXIw3w1JtA==",
+  "dgSpecHash": "kLA5JlNukaA6b8VUK3R/rQiDkYCsuPnhwkN5tYfJHLE0R4+QS2bdoE7ezOwARG08+LFZPMdygfwQAkCa36sFgw==",
   "success": true,
   "projectFilePath": "D:\\Prpjects\\ApiGateWay\\APIJWTLayerProj3\\APIJWTLayerProj\\APIJWTLayerProj.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.0.0\\microsoft.aspnetcore.authorization.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.0.0\\microsoft.aspnetcore.authorization.policy.2.0.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.0\\microsoft.aspnetcore.cryptography.internal.3.1.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.0\\microsoft.aspnetcore.cryptography.keyderivation.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.server.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -18,6 +20,7 @@
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.0\\microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.0.0\\microsoft.aspnetcore.http.extensions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.0\\microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.0\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.0-preview3-19153-02\\microsoft.aspnetcore.jsonpatch.3.0.0-preview3-19153-02.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.0.0\\microsoft.aspnetcore.mvc.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.0.0\\microsoft.aspnetcore.mvc.core.2.0.0.nupkg.sha512",
@@ -63,6 +66,8 @@
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.0\\microsoft.extensions.dependencymodel.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.0.0\\microsoft.extensions.fileproviders.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.0.0\\microsoft.extensions.hosting.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.0\\microsoft.extensions.identity.core.3.1.0.nupkg.sha512",
+    "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.0\\microsoft.extensions.identity.stores.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\AC TI VE\\.nuget\\packages\\microsoft.extensions.objectpool\\2.0.0\\microsoft.extensions.objectpool.2.0.0.nupkg.sha512",

@@ -34,6 +34,7 @@ namespace APIJWTLayerProj
             var appSettings = appSettingsSection.Get<AppSettings>();
             services.AddOurAuthentication(appSettings);
             services.AddOurSwaager();
+            services.AddIdentity();
             // DI services
             services.AddScoped<IUserService, UserService>();
 
@@ -57,7 +58,10 @@ namespace APIJWTLayerProj
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
             });
+
+            app.UseAuthentication();
             app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -76,8 +80,9 @@ namespace APIJWTLayerProj
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-           // http://localhost:56272/swagger/index.html
+                    // pattern: "http://localhost:56272/swagger/index.html");
+                 pattern: "{controller=Home}/{action=Index}/{id?}");
+                // 
             });
         }
     }
