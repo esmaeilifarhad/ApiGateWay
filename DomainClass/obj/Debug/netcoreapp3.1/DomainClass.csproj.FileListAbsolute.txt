@@ -1,0 +1,132 @@
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.exe
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.deps.json
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.runtimeconfig.json
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.runtimeconfig.dev.json
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.pdb
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.AssemblyInfoInputs.cache
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.AssemblyInfo.cs
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csproj.CoreCompileInputs.cache
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csproj.CopyComplete
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.pdb
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.genruntimeconfig.cache
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\AC TI VE\source\repos\APIJWTLayerProj\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csprojAssemblyReference.cache
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.exe
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.deps.json
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.runtimeconfig.json
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.runtimeconfig.dev.json
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\DomainClass.pdb
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csprojAssemblyReference.cache
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.AssemblyInfoInputs.cache
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.AssemblyInfo.cs
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csproj.CoreCompileInputs.cache
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.csproj.CopyComplete
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.dll
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.pdb
+D:\Prpjects\ApiJWTAndLAyerStudentPro\APIJWTLayerProj3\DomainClass\obj\Debug\netcoreapp3.1\DomainClass.genruntimeconfig.cache
