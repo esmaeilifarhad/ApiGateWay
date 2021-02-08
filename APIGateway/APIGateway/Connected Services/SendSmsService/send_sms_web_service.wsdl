@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:send_sms_web_service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:send_sms_web_service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:send_sms_web_service">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="send_sms_web_serviceRequest">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="source" type="xsd:string" />
+    <wsdl:part name="destination" type="xsd:string" />
+    <wsdl:part name="message_body" type="xsd:string" />
+    <wsdl:part name="language" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="send_sms_web_serviceResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="send_sms_web_servicePortType">
+    <wsdl:operation name="send_sms_web_service">
+      <documentation>Send SMS</documentation>
+      <wsdl:input message="tns:send_sms_web_serviceRequest" />
+      <wsdl:output message="tns:send_sms_web_serviceResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="send_sms_web_serviceBinding" type="tns:send_sms_web_servicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="send_sms_web_service">
+      <soap:operation soapAction="urn:send_sms_web_service#send_sms_web_service" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:send_sms_web_service" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:send_sms_web_service" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="send_sms_web_service">
+    <wsdl:port name="send_sms_web_servicePort" binding="tns:send_sms_web_serviceBinding">
+      <soap:address location="https://172.50.251.222:443/webservices/send_sms_web_service.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

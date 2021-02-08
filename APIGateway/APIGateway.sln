@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{687387AB-B92F-4A8C-A1CE-29AA544646E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainClass", "DomainClass\DomainClass.csproj", "{2456FFAB-896B-477B-98FE-3CE062ADFE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{B5EEFBDA-582D-43B5-BB04-01831679FC5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityAndServices", "UtilityAndServices\UtilityAndServices.csproj", "{4D06018B-E8EE-48E4-B1F1-1787F1AA5AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{687387AB-B92F-4A8C-A1CE-29AA544646E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687387AB-B92F-4A8C-A1CE-29AA544646E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687387AB-B92F-4A8C-A1CE-29AA544646E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687387AB-B92F-4A8C-A1CE-29AA544646E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2456FFAB-896B-477B-98FE-3CE062ADFE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2456FFAB-896B-477B-98FE-3CE062ADFE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2456FFAB-896B-477B-98FE-3CE062ADFE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2456FFAB-896B-477B-98FE-3CE062ADFE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5EEFBDA-582D-43B5-BB04-01831679FC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5EEFBDA-582D-43B5-BB04-01831679FC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5EEFBDA-582D-43B5-BB04-01831679FC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5EEFBDA-582D-43B5-BB04-01831679FC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D06018B-E8EE-48E4-B1F1-1787F1AA5AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D06018B-E8EE-48E4-B1F1-1787F1AA5AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D06018B-E8EE-48E4-B1F1-1787F1AA5AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D06018B-E8EE-48E4-B1F1-1787F1AA5AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EEF1F7D-D3DF-46C8-88C8-82FF65824590}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.enb.local/tfs/enbcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = APIGateway\\APIGateway.csproj
+		SccProjectName1 = APIGateway
+		SccLocalPath1 = APIGateway
+		SccProjectUniqueName2 = DomainClass\\DomainClass.csproj
+		SccProjectName2 = DomainClass
+		SccLocalPath2 = DomainClass
+		SccProjectUniqueName3 = DataAccess\\DataAccess.csproj
+		SccProjectName3 = DataAccess
+		SccLocalPath3 = DataAccess
+		SccProjectUniqueName4 = UtilityAndServices\\UtilityAndServices.csproj
+		SccProjectName4 = UtilityAndServices
+		SccLocalPath4 = UtilityAndServices
+	EndGlobalSection
+EndGlobal

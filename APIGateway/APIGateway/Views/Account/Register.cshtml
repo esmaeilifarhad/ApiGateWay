@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>ورود کاربری</h2>
+<div class="row">
+    <div class="col12">
+        @TempData["Error"]
+        <form method="post" action="/account/Register">
+            <table class="table table-striped">
+                <tr>
+                    <td>نام کاربری</td>
+                    <td><input placeholder="Username" type="text" name="Username" /></td>
+                </tr>
+                <tr>
+                    <td>پسورد</td>
+                    <td><input placeholder="Password" type="text" name="Password" /></td>
+                </tr>
+                <tr>
+                    <td>نام</td>
+                    <td><input placeholder="FirstName" type="text" name="FirstName" /></td>
+                </tr>
+                <tr>
+                    <td>نام خانوادگی</td>
+                    <td><input placeholder="LastName" type="text" name="LastName" /></td>
+                </tr>
+                <tr>
+
+                    <td>رمز عبور</td>
+                    <td><input type="password" name="LoginPass" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="ارسال" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col12">
+
+    </div>
+</div>
