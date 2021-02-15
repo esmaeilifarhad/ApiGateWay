@@ -20,3 +20,15 @@ E:\project\ENB.API_Gateway\APIGateway\UtilityAndServices\bin\Debug\EntityFramewo
 E:\project\ENB.API_Gateway\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.xml
 E:\project\ENB.API_Gateway\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.SqlServer.xml
 E:\project\ENB.API_Gateway\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csproj.CopyComplete
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\UtilityAndServices.exe.config
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\UtilityAndServices.exe
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\UtilityAndServices.pdb
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.SqlServer.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\bin\Debug\EntityFramework.SqlServer.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csprojAssemblyReference.cache
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csproj.CoreCompileInputs.cache
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csproj.CopyComplete
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.exe
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.pdb

@@ -157,7 +157,7 @@ namespace APIGateway.Services
                     sayadId = param.sayadId,
                     holder = param.holder,
                     receivers = param.receivers,
-                    singers = param.signers,
+                    signers = param.signers,
                     toIban = param.toIban,
                     transferDate = param.transferDate,
                     acceptTransfer = param.acceptTransfer,
@@ -348,7 +348,7 @@ namespace APIGateway.Services
 
         }
         /// <summary>
-        /// نحوه فراخوانی سرویس
+        /// سرویس استعلام وضعیت انتقال چک
         /// </summary>
 
         public string inquiry_transfer(ViewModel.Pichak.inquiry_transfer_Param param)

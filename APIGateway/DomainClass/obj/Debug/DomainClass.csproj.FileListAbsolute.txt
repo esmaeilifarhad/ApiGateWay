@@ -22,3 +22,15 @@ D:\Prpjects\ApiGateWayBank\APIGateway\DomainClass\obj\Debug\DomainClass.exe
 D:\Prpjects\ApiGateWayBank\APIGateway\DomainClass\obj\Debug\DomainClass.pdb
 D:\Prpjects\ApiGateWayBank\APIGateway\DomainClass\obj\Debug\DomainClass.csprojAssemblyReference.cache
 E:\project\ENB.API_Gateway\APIGateway\DomainClass\obj\Debug\DomainClass.csprojAssemblyReference.cache
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\DomainClass.exe.config
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\DomainClass.exe
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\DomainClass.pdb
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\EntityFramework.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\EntityFramework.SqlServer.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\EntityFramework.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\bin\Debug\EntityFramework.SqlServer.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.csprojAssemblyReference.cache
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.csproj.CoreCompileInputs.cache
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.csproj.CopyComplete
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.exe
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.pdb
