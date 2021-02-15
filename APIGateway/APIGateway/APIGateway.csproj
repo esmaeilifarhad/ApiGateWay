@@ -212,7 +212,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Services\JWTService.cs" />
     <Compile Include="Services\PichakService.cs" />
     <Compile Include="ViewModel\Pichak\cashing_inquiry.cs" />
     <Compile Include="ViewModel\Pichak\cashing_lock_cheque_for_cashing.cs" />

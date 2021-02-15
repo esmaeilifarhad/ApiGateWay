@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "ca8654b3-b718-47a5-9f85-f0b5a844fb93",
+		"name": "Pichak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44391/api/Pichak/CallShahabCode",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ctf\":\"4808891\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/CallShahabCode",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"CallShahabCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.50.206/api/Pichak/cheque_issue",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"accountOwners\": [\r\n{\r\n\"name\": \" اشکان رحمانی \",\r\n\"idCode\": \"0076721108\",\r\n\"shahabId\": \"10000076721108\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"receivers\": [\r\n{\r\n\"name\": \"حامد نازک تبار \",\r\n\"idCode\": \"0057671784\",\r\n\"shahabId\": \"1000000057671784\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"signers\": [\r\n{\r\n\"signer\": {\r\n  \"name\": \" محمد معصومی \",\r\n\"idCode\": \"0076721108\",\r\n\"shahabId\": \"10000076721108\",\r\n\"idType\": 1\r\n},\r\n\"signGrantor\": {\r\n\"name\": \" اشکان رحمانی \",\r\n\"idCode\": \"1236547896\",\r\n\"shahabId\": \"100001236547896\",\r\n\"idType\": 1\r\n},\r\n\"legalStamp\": 0\r\n}\r\n],\r\n\"sayadId\": \"8370980000000686\",\r\n\"seriesNo\": \"65 -ب \",\r\n\"serialNo\": \"1126587\",\r\n\"fromIban\": \"IR920160000000000717891492\",\r\n\"amount\": 1500,\r\n\"description\": \" توضیحات چک \",\r\n\"dueDate\": \"13980725\",\r\n\"toIban\": \"IR920160000000000717891445\",\r\n\"currency\": 1,\r\n\"bankCode\": \"17\",\r\n\"branchCode\": \"1700115\",\r\n\"chequeType\": 1,\r\n\"chequeMedia\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cheque_issue",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cheque_issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EghtesadNovin-Sample",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E9ht3$@dN0v!n",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "EghtesadNovin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "callerTerminalName",
+						"type": "text",
+						"value": "InternetBank"
+					},
+					{
+						"key": "callerBranchUserName",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "callerBranchCode",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "customerAuthStatus",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "x-jws-signature",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "rejectUnauthorized",
+						"value": "false",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "strictSSL",
+						"value": "false",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountOwners\": [\n    {\n      \"name\": \"محمدجواد زرین مجد\",\n      \"idCode\": \"0082121389\",\n      \"shahabId\": \"\",\n      \"idType\": 1\n    }\n  ],\n  \"receivers\": [\n    {\n      \"name\": \"لیلا ارسلان سالاری\",\n      \"idCode\": \"0069361381\",\n      \"shahabId\": \"\",\n      \"idType\": 1\n    }\n  ],\n  \"signers\": [\n    {\n      \"signer\": {\n        \"name\": \"محمدجواد زرین مجد\",\n        \"idCode\": \"0082121389\",\n        \"shahabId\": \"\",\n        \"idType\": 1\n      },\n      \"legalStamp\": 0\n    }\n  ],\n  \"sayadId\": \"8889990000279770\",\n  \"seriesNo\": \"25\",\n  \"serialNo\": \"0279770\",\n  \"fromIban\": \"IR030190000000100412328003\",\n  \"amount\": 85000000,\n  \"description\": \"نمونه جهت استفاده اقتصاد نوین\",\n  \"dueDate\": \"13991101\",\n  \"toIban\": \"IR530800000000201745360007\",\n  \"currency\": 1,\n  \"bankCode\": \"19\",\n  \"branchCode\": \"1902901\",\n  \"chequeType\": 1,\n  \"chequeMedia\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/cheque/issue",
+					"protocol": "https",
+					"host": [
+						"Eghtesadnovin",
+						"pichak",
+						"nibn",
+						"ir"
+					],
+					"port": "9911",
+					"path": [
+						"api",
+						"pichak",
+						"cheque",
+						"issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cheque_accept",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000686\",\r\n\"accept\": 0,\r\n\"acceptDescription\": \"مبلغ غلط است \",\r\n\"acceptor\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 2\r\n},\r\n\"acceptorAgent\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 1\r\n},\r\n\"acceptDate\": \"13980905231556\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cheque_accept",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cheque_accept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cheque_cancel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000686\",\r\n\"cancelDate\": \"13980905231556\",\r\n\"cancelDescription\": \"جهت اصلاح مبلغ \",\r\n\"canceller\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 2\r\n},\r\n\"cancellerAgent\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 1\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cheque_cancel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cheque_cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/inquiry_transfer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000688\",\r\n\"shahabId\": \"1000000058672724\",\r\n\"idType\": 1,\r\n\"idCode\": \"1292154391\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/inquiry_transfer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"inquiry_transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cashing_lock_cheque_for_cashing",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000686\",\r\n\"holderIban\": \"IR920160000000000717891445\",\r\n\"holders\": [\r\n{\r\n\"shahabId\": \"3000001006423219\",\r\n\"idCode\": \"0079865321\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"chequeCarrier\": {\r\n\"shahabId\": \"3000001006423219\",\r\n\"idCode\": \"0079865321\",\r\n\"idType\": 1\r\n},\r\n\"fromIban\": \"IR250160000000000712589439\",\r\n\"cashingAmount\": 3000,\r\n\"cashingDueDate\": \"13981119\",\r\n\"requestDate\": \"13991108101500\",\r\n\"bounceCheque\": 1,\r\n\"cashierBranchCode\": \"1100115\",\r\n\"cashierBankCode\": \"11\",\r\n\"chequeType\": 2,\r\n\"chequeMedia\": 1,\r\n\"serialNo\": \"2233652\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cashing_lock_cheque_for_cashing",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cashing_lock_cheque_for_cashing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cashing_unlock_cheque",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sayadId\": \"8370980000000686\",\r\n\"holders\": [\r\n{\r\n\"shahabId\": \"3000001006423219\",\r\n\"idCode\": \"0079865321\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"chequeCarrier\": {\r\n\"shahabId\": \"3000001006423219\",\r\n\"idCode\": \"0079865321\",\r\n\"idType\": 1\r\n},\r\n\"requestDate\": \"13991101110400\",\r\n\"cashierBranchCode\": \"1100115\",\r\n  \"cashierBankCode\": \"11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cashing_unlock_cheque",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cashing_unlock_cheque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cashing_inquiry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "23565",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "fery",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"sayadId\": \"8370980000000686\",\r\n\"serialNo\": \"02325658\",\r\n\"fromIban\": \"IR250160000000000712589439\",\r\n\"cashingAmount\": 3000,\r\n\"cashingDueDate\": \"13981119\",\r\n\"chequeType\": 2,\r\n\"chequeMedia\": 1,\r\n\"requestDate\": \"13980926121500\",\r\n\"holders\": [\r\n{\r\n\"shahabId\": \"3000001006423219\",\r\n\"idCode\": \"0079865321\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"cashierBankCode\": \"11\",\r\n\"cashierBranchCode\": \"1100115\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cashing_inquiry",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cashing_inquiry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Shahab/CallShahabCode",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ctf\":\"4808891\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Shahab/CallShahabCode",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Shahab",
+						"CallShahabCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cheque_transfer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000686\",\r\n\"holder\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 1\r\n},\r\n\"receivers\": [\r\n{\r\n  \"name\": \" اشکان رحمانی \",\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"1000000069958051\",\r\n\"idType\": 1\r\n}\r\n],\r\n\"signers\": [\r\n{\r\n\"signer\": {\r\n\"idCode\": \"1292154391\",\r\n\"shahabId\": \"10000076721108\",\r\n\"idType\": 1\r\n},\r\n\"legalStamp\": 0\r\n}\r\n],\r\n\"toIban\": \"IR920160000000000717891492\",\r\n\"transferDate\": \"13980820111111\",\r\n\"acceptTransfer\": 1,\r\n\"description\": \" انتقال جهت خرید \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cheque_transfer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cheque_transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/cheque_revoke",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000686\",\r\n\"revokerAgent\": {\r\n\"shahabId\": \"1000000337733337\",\r\n\"idCode\": \"1292154391\",\r\n\"idType\": 1\r\n},\r\n\"revoker\": {\r\n\"shahabId\": \"2000000337733337\",\r\n\"idCode\": \"1292154391\",\r\n\"idType\": 2\r\n},\r\n\"revokeDate\": \"13980912114500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/cheque_revoke",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"cheque_revoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44391/api/Pichak/inquiry_issuer_inquiry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P!CH@K",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Pichak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sayadId\": \"8370980000000688\",\r\n\"shahabId\": \"1000000058672724\",\r\n\"idType\": 1,\r\n\"idCode\": \"1292154391\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Pichak/inquiry_issuer_inquiry",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Pichak",
+						"inquiry_issuer_inquiry"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

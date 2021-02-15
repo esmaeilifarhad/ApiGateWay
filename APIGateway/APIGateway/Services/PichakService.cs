@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Web;
@@ -50,8 +51,52 @@ namespace APIGateway.Services
             request.AddHeader("customerAuthStatus", "2");
             request.AddHeader("Authorization", "Basic RWdodGVzYWROb3ZpbjpFOWh0MyRAZE4wdiFu");
             request.AddHeader("Content-Type", "application/json");
+
+
+
+           
             return request;
         }
+        private string Sign(string json) {
+            string data = "2"+"InternetBank"+""+""+json;
+
+
+            string address = ""; //@"E:\Document\Pichak\Govahipichackkhadamat\pichak_BankerNet";
+            var rootpath = HttpContext.Current.Server.MapPath("~");
+            address = rootpath + @"FilesPFX\pichak_BankerNet";
+            var certFile = Path.Combine(address, "certificatePichakNetTest.pfx");
+            X509Certificate2 certificate = new X509Certificate2(certFile, "testPi@p@ssw0rd");
+
+
+     
+
+
+        
+
+
+
+            var cert = new X509Certificate2(certificate);
+            string xml = cert.PrivateKey.ToXmlString(true);
+           // cert.PrivateKey;
+            //cert.HasPrivateKey; // This is always true!
+            //cert.PrivateKey; // Works on my machine (only)
+
+
+
+            return data;
+        }
+
+
+        public byte[] SignDetached(X509Certificate2 certificate, byte[] dataToSign)
+        {
+            ContentInfo contentInfo = new ContentInfo(dataToSign);
+            SignedCms cms = new SignedCms(contentInfo, true);
+            CmsSigner signer = new CmsSigner(certificate);
+            cms.ComputeSignature(signer, false);
+            return cms.Encode();
+        }
+
+
         #endregion
 
 
@@ -85,6 +130,8 @@ namespace APIGateway.Services
                     chequeMedia = param.chequeMedia
 
                 };
+                //add Sign
+                request.AddHeader("x-jws-signature", Sign(JsonConvert.SerializeObject(body)));
 
                 request.AddJsonBody(body);
                 IRestResponse response = client.Execute(request);
