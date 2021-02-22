@@ -41,7 +41,6 @@ E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\D
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\DomainClass.exe
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\EntityFramework.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
-E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\Oracle.ManagedDataAccess.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\DomainClass.pdb
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\DomainClass.exe.config
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DataAccess\bin\Debug\EntityFramework.xml

@@ -46,3 +46,60 @@ start.........................
 01:44:53 ب.ظ دوشنبه, 13 بهمن 1399
 92return response.Content;
 End.........................
+start.........................
+12:05:29 ب.ظ پنجشنبه, 30 بهمن 1399
+System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at RestSharp.Http.WriteRequestBody(WebRequest webRequest)
+   at RestSharp.Http.<PostPutInternal>b__180_0(HttpWebRequest r)
+   at RestSharp.Http.ExecuteRequest(String httpMethod, Action`1 prepareRequest)
+   at RestSharp.Http.PostPutInternal(String method)
+   at RestSharp.Http.AsPost(String httpMethod)
+   at RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   at RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+End.........................
+start.........................
+12:05:29 ب.ظ پنجشنبه, 30 بهمن 1399
+The request was aborted: Could not create SSL/TLS secure channel.
+End.........................
+start.........................
+09:14:44 ق.ظ دوشنبه, 4 اسفند 1399
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine 192.168.10.195:9911
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at RestSharp.Http.WriteRequestBody(WebRequest webRequest)
+   at RestSharp.Http.<PostPutInternal>b__180_0(HttpWebRequest r)
+   at RestSharp.Http.ExecuteRequest(String httpMethod, Action`1 prepareRequest)
+   at RestSharp.Http.PostPutInternal(String method)
+   at RestSharp.Http.AsPost(String httpMethod)
+   at RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   at RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+End.........................
+start.........................
+09:14:44 ق.ظ دوشنبه, 4 اسفند 1399
+Unable to connect to the remote server
+End.........................
+start.........................
+12:14:02 ب.ظ دوشنبه, 4 اسفند 1399
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine 192.168.10.195:9911
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at RestSharp.Http.WriteRequestBody(WebRequest webRequest)
+   at RestSharp.Http.<PostPutInternal>b__180_0(HttpWebRequest r)
+   at RestSharp.Http.ExecuteRequest(String httpMethod, Action`1 prepareRequest)
+   at RestSharp.Http.PostPutInternal(String method)
+   at RestSharp.Http.AsPost(String httpMethod)
+   at RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   at RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+End.........................
+start.........................
+12:14:02 ب.ظ دوشنبه, 4 اسفند 1399
+Unable to connect to the remote server
+End.........................
