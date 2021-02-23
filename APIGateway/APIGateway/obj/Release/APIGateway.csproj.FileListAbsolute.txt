@@ -261,7 +261,6 @@ E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\EntityF
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.Web.Infrastructure.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Newtonsoft.Json.dll
-E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Oracle.ManagedDataAccess.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\RestSharp.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\System.Net.Http.Formatting.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\System.Web.Helpers.dll
@@ -304,3 +303,13 @@ E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\obj\Release
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\obj\Release\APIGateway.csproj.CopyComplete
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\obj\Release\APIGateway.dll
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\obj\Release\APIGateway.pdb
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\BouncyCastle.Crypto.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\jose-jwt.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.Logging.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.Tokens.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.Logging.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\Microsoft.IdentityModel.Tokens.xml
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\APIGateway\bin\System.IdentityModel.Tokens.Jwt.xml

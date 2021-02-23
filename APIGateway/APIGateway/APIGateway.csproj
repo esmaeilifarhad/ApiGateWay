@@ -1005,9 +1005,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="FilesPFX\pichak_BankerNet\Pass key.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="PFXFiles\Pichak_BankerApp\Pass key.txt" />
+    <Content Include="PFXFiles\pichak_BankerNet\Pass key.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -1034,9 +1035,14 @@
     <None Include="Connected Services\YaghutService\soap_en.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="FilesPFX\pichak_BankerNet\certificate%281%29.cer" />
-    <Content Include="FilesPFX\pichak_BankerNet\certificatePichakNetTest.pfx" />
-    <Content Include="FilesPFX\pichak_BankerNet\Document.pdf" />
+    <Content Include="PFXFiles\Pichak_BankerApp.rar" />
+    <Content Include="PFXFiles\Pichak_BankerApp\certificateAppTest.cer" />
+    <Content Include="PFXFiles\Pichak_BankerApp\certificatePichakAppTest.pfx" />
+    <Content Include="PFXFiles\Pichak_BankerApp\Document.pdf" />
+    <Content Include="PFXFiles\Pichak_BankerApp\KeyPrivatePichakTestApp.key" />
+    <Content Include="PFXFiles\pichak_BankerNet\certificate%281%29.cer" />
+    <Content Include="PFXFiles\pichak_BankerNet\certificatePichakNetTest.pfx" />
+    <Content Include="PFXFiles\pichak_BankerNet\Document.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

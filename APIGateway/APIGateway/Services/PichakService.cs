@@ -97,100 +97,31 @@ namespace APIGateway.Services
         /// <param name="path"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        //private  string Token12(string plaintext, string path, string password)
-        //{
-        //    try
-        //    {
-        //        X509Certificate2 certX509 = new X509Certificate2(path, password);
-        //        byte[] privateKey = certX509.Export(X509ContentType.Cert, password);
-        //        //var key1 = certX509.PrivateKey as RSACryptoServiceProvider;
-        //        //string token = Jose.JWT.Encode(plaintext, privateKey, JwsAlgorithm.HS256);
-        //        string token = Jose.JWT.Encode(plaintext, privateKey, JwsAlgorithm.RS256);
-        //        //var token =  JWT.EncodeBytes(Encoding.UTF8.GetBytes(plaintext), privateKey, JwsAlgorithm.HS256,null,null,null);
-        //        // var token=JWT.Encode(plaintext,privateKey,JwsAlgorithm.ES256);
-        //        // var token = JWT.Encode(plaintext, privateKey, JwsAlgorithm.HS512);
+        private string Token12(string plaintext, string path, string password)
+        {
+            try
+            {
+                X509Certificate2 certX509 = new X509Certificate2(path, password);
+                byte[] privateKey = certX509.Export(X509ContentType.Cert, password);
+                //var key1 = certX509.PrivateKey as RSACryptoServiceProvider;
+                //string token = Jose.JWT.Encode(plaintext, privateKey, JwsAlgorithm.HS256);
+                string token = Jose.JWT.Encode(plaintext, privateKey, JwsAlgorithm.RS256);
+                //var token =  JWT.EncodeBytes(Encoding.UTF8.GetBytes(plaintext), privateKey, JwsAlgorithm.HS256,null,null,null);
+                // var token=JWT.Encode(plaintext,privateKey,JwsAlgorithm.ES256);
+                // var token = JWT.Encode(plaintext, privateKey, JwsAlgorithm.HS512);
 
-        //        //string token = Jose.JWT.Encode(Encoding.UTF8.GetBytes(plaintext), privateKey, , JweEncryption.A128CBC_HS256, null, null);
-        //        return token;
-        //    }
-        //    catch (Exception ex)
-        //    {
+                //string token = Jose.JWT.Encode(Encoding.UTF8.GetBytes(plaintext), privateKey, , JweEncryption.A128CBC_HS256, null, null);
+                return token;
+            }
+            catch (Exception ex)
+            {
 
-        //        throw;
-        //    }
+                throw;
+            }
 
-        //}
+        }
 
-        //private string jwt(string plaintext, string path, string password) {
-        //    X509Certificate2 certificate = new X509Certificate2(path, password);
-        //   // RSACryptoServiceProvider key = certificate.PrivateKey as RSACryptoServiceProvider;
-        //    byte[] privateKey = certificate.Export(X509ContentType.Cert, password);
-
-
-        //    // var key1 = certX509.PrivateKey as RSACryptoServiceProvider;
-        //    //string token = Jose.JWT.Encode(plaintext, privateKey, JwsAlgorithm.HS256);
-
-        //    //System.Security.Cryptography.X509Certificates.X509Certificate2 certificate = LoadCertificate("Certificate.pfx", "PasswordofCertificate");
-
-        //    //RSACryptoServiceProvider key = certificate.PrivateKey as RSACryptoServiceProvider;
-
-        //    //--------------------------
-        //    var header = new { alg = "RS256", typ = "JWT" };
-        //    //            var payload1 = new Dictionary<string, object>()
-        //    //{
-        //    //{"iss", "6cc52d24-cb4f-46de-bf88-d08bf559e8e5"},
-        //    //{"sub", "fc86d3e0-2d5c-4ebb-9765-cb8b0e011ee4"},
-        //    //{"iat", 1589979664},
-        //    //{"exp", 1590008421},
-        //    //{"aud", "account-d.docusign.com"},
-        //    //{"scope", "signature impersonation"}
-        //    //};
-
-        //    var payload1 = plaintext;
-
-
-
-        //    byte[] pBytes =  Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(payload1,Formatting.None));
-        //    byte[] hBytes =  Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(header, Formatting.None));
-
-
-        //    string stringToSign = Convert.ToBase64String(hBytes) + "." + Convert.ToBase64String(pBytes);
-        //    try
-        //    {
-        //        string token = Jose.JWT.Encode(stringToSign, privateKey, JwsAlgorithm.RS256);
-        //        return token;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        throw;
-        //    }
-
-
-        //}
-
-        //private string jwtRsa(string payload, string path, string password) {
-
-        //    X509Certificate2 cert = new X509Certificate2(path, password);
-        //   var pub = cert.PublicKey.Key.ToXmlString(false);
-        //   RSA    key1 = cert.PrivateKey as RSACryptoServiceProvider;
-
-        //    // tbKey.Text += Environment.NewLine;
-        //    // var pri = cert.PrivateKey.ToXmlString(true);
-
-
-        //    //            var payload = new Dictionary<string, object>()
-        //    //{
-        //    //    { "sub", "mr.x@contoso.com" },
-        //    //    { "exp", 1300819380 }
-        //    //};
-
-        //    var privateKey = new X509Certificate2(path, password, X509KeyStorageFlags.Exportable | X509KeyStorageFlags.MachineKeySet).PrivateKey as RSACryptoServiceProvider;
-
-        //    string token = Jose.JWT.Encode(payload, key1, JwsAlgorithm.RS256);
-        //    return token;
-        //}
-
+       
 
         private string GenerateSign(string pichakReqBody, string callerTerminalName, string callerBranchCode, string callerBranchUserName, string customerAuthStatus, string certificateThumbPrint)
         {
@@ -477,20 +408,6 @@ namespace APIGateway.Services
             var client = InitialRestClient("cheque/cancel");
             var request = InitialRestRequest();
 
-            //ViewModel.Pichak.cheque_cancel_Canceller cheque_Cancel_Canceller = new ViewModel.Pichak.cheque_cancel_Canceller()
-            //{
-            //    idCode = "1236547896",
-            //    idType = 2,
-            //    shahabId = "10001236547896",
-
-            //};
-
-            //ViewModel.Pichak.cheque_cancel_CancellerAgent cheque_Cancel_CancellerAgent = new ViewModel.Pichak.cheque_cancel_CancellerAgent()
-            //{
-            //    idCode = "0017523698",
-            //    shahabId = "100000017523698",
-            //    idType = 1
-            //};
             var body = new
             {
                 sayadId = param.sayadId,
@@ -597,20 +514,7 @@ namespace APIGateway.Services
             var client = InitialRestClient("cashing/lock-cheque-for-cashing");
             var request = InitialRestRequest();
 
-            //List<ViewModel.Pichak.cashing_lock_cheque_Holder> lst_cashing_Lock_Cheque_Holder = new List<ViewModel.Pichak.cashing_lock_cheque_Holder>();
-            //ViewModel.Pichak.cashing_lock_cheque_Holder cashing_Lock_Cheque_Holder = new ViewModel.Pichak.cashing_lock_cheque_Holder()
-            //{
-            //    idCode = "0079865321",
-            //    shahabId = "3000001006423219",
-            //    idType = 1
-            //};
-            //lst_cashing_Lock_Cheque_Holder.Add(cashing_Lock_Cheque_Holder);
-            //ViewModel.Pichak.cashing_lock_cheque_ChequeCarrier cashing_Lock_Cheque_ChequeCarrier = new ViewModel.Pichak.cashing_lock_cheque_ChequeCarrier()
-            //{
-            //    shahabId = "3000001006423219",
-            //    idCode = "0079865321",
-            //    idType = 1
-            //};
+ 
             var body = new
             {
                 sayadId = param.sayadId,
@@ -679,32 +583,7 @@ namespace APIGateway.Services
         /// <summary>
         /// سرویس انتقال چک
         /// </summary>
-        public void cheque_transfer()
-        {
-            var client = InitialRestClient("cheque/transfer");
-            var request = InitialRestRequest();
-
-
-            var body = new
-            {
-                sayadId = "8370980000000688",
-                shahabId = "1000000058672724",
-                idType = 1,
-                idCode = "1292154391"
-
-            };
-            //add Sign
-            var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
-            request.AddHeader("x-jws-signature", stringSign);
-            //----------------------------------------
-            request.AddJsonBody(body);
-            IRestResponse response = client.Execute(request);
-            if (response.IsSuccessful == false)
-            {
-
-                ViewModel.Pichak.Error error = JsonConvert.DeserializeObject<ViewModel.Pichak.Error>(response.Content);
-            }
-        }
+      
         /// <summary>
         /// سرویس استعلام چک توسط دارنده
         /// </summary>
@@ -739,37 +618,7 @@ namespace APIGateway.Services
         /// <summary>
         /// سرویس استعلام چک توسط صادرکننده
         /// </summary>
-        public string issuer_inquiry()
-        {
-
-            var client = InitialRestClient("inquiry/issuer-inquiry");
-            var request = InitialRestRequest();
-
-
-            var body = new
-            {
-                sayadId = "8370980000000688",
-                shahabId = "1000000058672724",
-                idType = 1,
-                idCode = "1292154391"
-
-            };
-
-            //add Sign
-            var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
-            request.AddHeader("x-jws-signature", stringSign);
-            //----------------------------------------
-
-            request.AddJsonBody(body);
-            IRestResponse response = client.Execute(request);
-            if (response.IsSuccessful == false)
-            {
-                return response.Content;
-                //ViewModel.Pichak.Error error = JsonConvert.DeserializeObject<ViewModel.Pichak.Error>(response.Content);
-            }
-            return response.Content;
-
-        }
+     
         /// <summary>
         /// سرویس استعلام نقد شوندگی
         /// </summary>

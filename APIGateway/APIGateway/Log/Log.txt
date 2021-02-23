@@ -103,3 +103,23 @@ start.........................
 12:14:02 ب.ظ دوشنبه, 4 اسفند 1399
 Unable to connect to the remote server
 End.........................
+start.........................
+08:36:04 ق.ظ سه شنبه, 5 اسفند 1399
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.10.195:9911
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at RestSharp.Http.WriteRequestBody(WebRequest webRequest)
+   at RestSharp.Http.<PostPutInternal>b__180_0(HttpWebRequest r)
+   at RestSharp.Http.ExecuteRequest(String httpMethod, Action`1 prepareRequest)
+   at RestSharp.Http.PostPutInternal(String method)
+   at RestSharp.Http.AsPost(String httpMethod)
+   at RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   at RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+End.........................
+start.........................
+08:36:04 ق.ظ سه شنبه, 5 اسفند 1399
+Unable to connect to the remote server
+End.........................
