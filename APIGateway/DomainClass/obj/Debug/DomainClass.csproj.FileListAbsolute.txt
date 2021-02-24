@@ -33,3 +33,4 @@ E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.csproj.CopyComplete
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.exe
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.pdb
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\DomainClass\obj\Debug\DomainClass.csprojAssemblyReference.cache

@@ -6,14 +6,6 @@ using System.Web;
 namespace APIGateway.ViewModel.Pichak
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
-    public class cheque_issue_Specification
-    {
-        public string name { get; set; }
-        public string idCode { get; set; }
-        public string shahabId { get; set; }
-        public int idType { get; set; }
-    }
-
     public class cheque_issue_AccountOwner
     {
         public string name { get; set; }
@@ -38,16 +30,25 @@ namespace APIGateway.ViewModel.Pichak
         public int idType { get; set; }
     }
 
+    public class cheque_issue_SignGrantor
+    {
+        public string name { get; set; }
+        public string idCode { get; set; }
+        public string shahabId { get; set; }
+        public int idType { get; set; }
+    }
+
     public class cheque_issue_Signer
     {
-        public List<cheque_issue_Specification> signer { get; set; }
+        public cheque_issue_Signer2 signer { get; set; }
+        public cheque_issue_SignGrantor signGrantor { get; set; }
         public int legalStamp { get; set; }
     }
 
     public class cheque_issue_Root
     {
-        public List<cheque_issue_Specification> accountOwners { get; set; }
-        public List<cheque_issue_Specification> receivers { get; set; }
+        public List<cheque_issue_AccountOwner> accountOwners { get; set; }
+        public List<cheque_issue_Receiver> receivers { get; set; }
         public List<cheque_issue_Signer> signers { get; set; }
         public string sayadId { get; set; }
         public string seriesNo { get; set; }
@@ -64,11 +65,7 @@ namespace APIGateway.ViewModel.Pichak
         public int chequeMedia { get; set; }
     }
 
-    public class Error
-    {
-        public string errorCode { get; set; }
-        public string errorMessage { get; set; }
-    }
+
 
 
 }
