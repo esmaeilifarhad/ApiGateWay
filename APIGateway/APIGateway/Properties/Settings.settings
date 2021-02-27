@@ -16,5 +16,8 @@
     <Setting Name="LoginPass" Type="System.String" Scope="Application">
       <Value Profile="(Default)">@p!G@teW@y</Value>
     </Setting>
+    <Setting Name="commonUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

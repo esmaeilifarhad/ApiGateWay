@@ -236,10 +236,13 @@
     <Compile Include="ViewModel\Pichak\cashing_lock_cheque_for_cashing.cs" />
     <Compile Include="ViewModel\Pichak\cashing_unlock_cheque_Root.cs" />
     <Compile Include="ViewModel\Pichak\cheque_accept.cs" />
+    <Compile Include="ViewModel\Pichak\cheque_block.cs" />
+    <Compile Include="ViewModel\Pichak\cheque_branch_status.cs" />
     <Compile Include="ViewModel\Pichak\cheque_cancel.cs" />
     <Compile Include="ViewModel\Pichak\cheque_issue.cs" />
     <Compile Include="ViewModel\Pichak\cheque_revoke.cs" />
     <Compile Include="ViewModel\Pichak\cheque_transfer.cs" />
+    <Compile Include="ViewModel\Pichak\cheque_unblock.cs" />
     <Compile Include="ViewModel\Pichak\inner_bank_cashing_Root.cs" />
     <Compile Include="ViewModel\Pichak\inquiry_cheque.cs" />
     <Compile Include="ViewModel\Pichak\inquiry_issuer_inquiry.cs" />

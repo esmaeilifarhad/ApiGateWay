@@ -21,7 +21,8 @@ namespace APIGateway.Services
     public class PichakService
     {
         #region Initial
-        string _commonUrl = "https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/";
+        //string _commonUrl = "https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/";
+        string _commonUrl = APIGateway.Properties.Settings.Default.commonUrl;
         private string _callerTerminalName { get { return "mobileBank"; } }
         private string _callerBranchUserName { get { return ""; } }
         private string _callerBranchCode { get { return "5501954"; } }
@@ -172,6 +173,12 @@ namespace APIGateway.Services
             }
 
         }
+
+      
+
+
+
+
 
 
 
@@ -745,6 +752,163 @@ namespace APIGateway.Services
             }
             return response.Content;
         }
+        /// <summary>
+        /// سرویس تغییر وضعیت )مخصوص شعبه(
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+
+        public string cheque_branch_status(cheque_branch_status param)
+        {
+            try
+            {
+                var client = InitialRestClient("cheque/issue");
+                var request = InitialRestRequest();
+
+                var body = new
+                {
+                    sayadId = param.sayadId,
+                    fromIban = param.fromIban,
+                    branchUserId1 = param.branchUserId1,
+                    branchUserId2 = param.branchUserId2,
+                    newStatus = param.newStatus,
+                    description = param.description
+
+                };
+                //add Sign
+                var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
+                request.AddHeader("x-jws-signature", stringSign);
+                //----------------------------------------
+                request.AddJsonBody(body);
+                IRestResponse response = client.Execute(request);
+                if (response.IsSuccessful == false)
+                {
+
+                    if (response.ErrorException != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorException.ToString());
+
+                    if (response.ErrorMessage != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorMessage.ToString());
+
+                    return response.Content;
+                }
+
+                return response.Content;
+            }
+            catch (Exception ex)
+            {
+
+                throw new ArgumentException(ex.Message);
+            }
+
+        }
+
+        /// <summary>
+        /// سرویس مسدودی چک
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public string cheque_block(cheque_block_Root param)
+        {
+            try
+            {
+                var client = InitialRestClient("cheque/issue");
+                var request = InitialRestRequest();
+
+                var body = new
+                {
+
+
+
+sayadId=param.sayadId,
+reasonCode=param.reasonCode,
+blockerAgent=param.blockerAgent,
+blocker=param.blocker,
+requestDate=param.requestDate,
+ letterNumber=param.letterNumber,
+letterDate=param.letterDate
+
+            };
+                //add Sign
+                var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
+                request.AddHeader("x-jws-signature", stringSign);
+                //----------------------------------------
+                request.AddJsonBody(body);
+                IRestResponse response = client.Execute(request);
+                if (response.IsSuccessful == false)
+                {
+
+                    if (response.ErrorException != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorException.ToString());
+
+                    if (response.ErrorMessage != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorMessage.ToString());
+
+                    return response.Content;
+                }
+
+                return response.Content;
+            }
+            catch (Exception ex)
+            {
+
+                throw new ArgumentException(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// سرویس رفع مسدودی
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public string cheque_unblock(cheque_unblock_Root param)
+        {
+            try
+            {
+                var client = InitialRestClient("cheque/issue");
+                var request = InitialRestRequest();
+
+                var body = new
+                {
+
+
+
+  sayadId=param.sayadId,
+unblockerAgent=param.unblockerAgent,
+unblocker=param.unblocker,
+requestDate=param.requestDate,
+letterNumber=param.letterNumber,
+letterDate=param.letterDate
+
+
+                };
+                //add Sign
+                var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
+                request.AddHeader("x-jws-signature", stringSign);
+                //----------------------------------------
+                request.AddJsonBody(body);
+                IRestResponse response = client.Execute(request);
+                if (response.IsSuccessful == false)
+                {
+
+                    if (response.ErrorException != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorException.ToString());
+
+                    if (response.ErrorMessage != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorMessage.ToString());
+
+                    return response.Content;
+                }
+
+                return response.Content;
+            }
+            catch (Exception ex)
+            {
+
+                throw new ArgumentException(ex.Message);
+            }
+        }
+
         #endregion
 
 

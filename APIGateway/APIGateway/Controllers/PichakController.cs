@@ -18,11 +18,8 @@ namespace APIGateway.Controllers
         {
          
         }
-        [HttpPost]
-        public IHttpActionResult test()
-        {
-            return Ok();
-        }
+  
+   
         [HttpPost]
         //دریافت کد شهاب از طریق کد مشتری 
         public IHttpActionResult CallShahabCode(ParamIn input)
@@ -227,6 +224,72 @@ namespace APIGateway.Controllers
             }
 
         }
+        /// <summary>
+        /// سرویس تغییر وضعیت )مخصوص شعبه(
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public IHttpActionResult cheque_branch_status(ViewModel.Pichak.cheque_branch_status root)
+        {
+            try
+            {
+                string username = User.Identity.Name;
+                var res = pichakService.cheque_branch_status(root);
+                var list = JsonConvert.DeserializeObject<object>(res);
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.ToString());
+            }
+
+        }
+        /// <summary>
+        /// سرویس مسدودی چک
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public IHttpActionResult cheque_block(ViewModel.Pichak.cheque_block_Root root)
+        {
+            try
+            {
+                string username = User.Identity.Name;
+                var res = pichakService.cheque_block(root);
+                var list = JsonConvert.DeserializeObject<object>(res);
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.ToString());
+            }
+
+        }
+        /// <summary>
+        /// سرویس رفع مسدودی
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public IHttpActionResult cheque_unblock(ViewModel.Pichak.cheque_unblock_Root root)
+        {
+            try
+            {
+                string username = User.Identity.Name;
+                var res = pichakService.cheque_unblock(root);
+                var list = JsonConvert.DeserializeObject<object>(res);
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.ToString());
+            }
+
+        }
+
+
+
 
         #endregion
     }

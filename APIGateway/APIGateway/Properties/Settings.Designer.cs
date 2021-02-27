@@ -12,7 +12,7 @@ namespace APIGateway.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -66,8 +66,7 @@ namespace APIGateway.Properties {
             "tCkvqc+bc3DFAmIY+hsSlLorZpUGlnUNOINkpFyPk7Ew7XkfKsXz70HnRjoudo8PJPZLIkvMLU6Bn4SX" +
             "8d0lSnUlcb58k0d4OacZPJOS9pauIAwOwdWICXht0fc6Zua7RbZ5xAt2MGR7uDxCTD5tuNY68/4GhvEG" +
             "2RNiO8fFNspNkBsbJeibbTUpimBtD0wTBy7S8Z1dIXPfniR8j7qV/ezlDrGJVApVobaQYmaz3GSK+WDn" +
-            "DZ+8QRwL2xaFNZEF9I4MgMmNFOX9vgUBiogLmf1q+V00uFjH3vJB0DC1JQ==</D></RSAKeyValue>\r\n" +
-            "")]
+            "DZ+8QRwL2xaFNZEF9I4MgMmNFOX9vgUBiogLmf1q+V00uFjH3vJB0DC1JQ==</D></RSAKeyValue>\n")]
         public string PrivateKey {
             get {
                 return ((string)(this["PrivateKey"]));
@@ -80,6 +79,15 @@ namespace APIGateway.Properties {
         public string LoginPass {
             get {
                 return ((string)(this["LoginPass"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/")]
+        public string commonUrl {
+            get {
+                return ((string)(this["commonUrl"]));
             }
         }
     }
