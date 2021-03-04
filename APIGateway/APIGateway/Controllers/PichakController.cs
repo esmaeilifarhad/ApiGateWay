@@ -33,7 +33,7 @@ namespace APIGateway.Controllers
                     OracleCommand cmd = new OracleCommand();
                     cmd.CommandTimeout = 600;
                     cmd.Connection = conn;
-                    cmd.CommandText = string.Format(@"select * from Customer_Shahab where cfcifno ={0} ", input.ctf);
+                    cmd.CommandText = string.Format(@"select * from Customer_Shahab where cfcifno ={0} ", input.cif);
                     //cmd.CommandText = string.Format(@"select * from customer_shahab_info");
 
 
@@ -295,7 +295,7 @@ namespace APIGateway.Controllers
     }
     public class ParamIn
     {
-        public string ctf { get; set; }
+        public string cif { get; set; }
     }
     public class ParamOut
     {

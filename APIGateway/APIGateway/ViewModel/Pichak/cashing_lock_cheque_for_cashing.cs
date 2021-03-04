@@ -36,6 +36,7 @@ namespace APIGateway.ViewModel.Pichak
         public int chequeType { get; set; }
         public int chequeMedia { get; set; }
         public string serialNo { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 
 

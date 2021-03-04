@@ -25,5 +25,6 @@ namespace APIGateway.ViewModel.Pichak
         public cheque_revoke_RevokerAgent revokerAgent { get; set; }
         public cheque_revoke_Revoker revoker { get; set; }
         public string revokeDate { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

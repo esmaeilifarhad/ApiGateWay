@@ -23,5 +23,6 @@ namespace APIGateway.ViewModel.Pichak
         public List<cashing_inquiry_Holder> holders { get; set; }
         public string cashierBankCode { get; set; }
         public string cashierBranchCode { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

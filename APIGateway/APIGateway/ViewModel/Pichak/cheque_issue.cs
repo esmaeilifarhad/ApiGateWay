@@ -6,6 +6,13 @@ using System.Web;
 namespace APIGateway.ViewModel.Pichak
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+    //public class InitialRestRequest {
+    //    public string TerminalName { get; set; }
+    //    public string BranchUserName { get; set; }
+    //    public string BranchCode { get; set; }
+    //    public string AuthStatus { get; set; }
+
+    //}
     public class cheque_issue_AccountOwner
     {
         public string name { get; set; }
@@ -47,6 +54,10 @@ namespace APIGateway.ViewModel.Pichak
 
     public class cheque_issue_Root
     {
+        /// <summary>
+        /// این پراپرتی برای داینامیک کردن استفاده شده است
+        /// </summary>
+       // public InitialRestRequest  initialRestRequest { get; set; }
         public List<cheque_issue_AccountOwner> accountOwners { get; set; }
         public List<cheque_issue_Receiver> receivers { get; set; }
         public List<cheque_issue_Signer> signers { get; set; }

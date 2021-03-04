@@ -11,5 +11,6 @@ namespace APIGateway.ViewModel.Pichak
         public string idCode { get; set; }
         public string shahabId { get; set; }
         public int idType { get; set; }
+      //  public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

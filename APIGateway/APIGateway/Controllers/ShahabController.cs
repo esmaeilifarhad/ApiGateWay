@@ -25,7 +25,7 @@ namespace APIGateway.Controllers
                     OracleCommand cmd = new OracleCommand();
                     cmd.CommandTimeout = 60000;
                     cmd.Connection = conn;
-                    cmd.CommandText = string.Format(@"select * from Shahab where cfcifno ={0} ", input.ctf);
+                    cmd.CommandText = string.Format(@"select * from Shahab where cfcifno ={0} ", input.cif);
                     //cmd.CommandText = string.Format(@"select * from customer_shahab_info");
 
 

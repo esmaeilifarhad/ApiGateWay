@@ -10,6 +10,7 @@ namespace APIGateway.ViewModel.Pichak
         public string requestDate { get; set; }
         public string cashierBranchCode { get; set; }
         public string cashierBankCode { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
     public class cashing_unlock_cheque_Holder
     {

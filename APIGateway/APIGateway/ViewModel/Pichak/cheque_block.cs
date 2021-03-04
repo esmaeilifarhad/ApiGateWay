@@ -30,5 +30,6 @@ namespace APIGateway.ViewModel.Pichak
         public string requestDate { get; set; }
         public string letterNumber { get; set; }
         public string letterDate { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

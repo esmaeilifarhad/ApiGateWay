@@ -13,6 +13,7 @@ namespace APIGateway.ViewModel.Pichak
         public string branchUserId2 { get; set; }
         public int newStatus { get; set; }
         public string description { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 
   

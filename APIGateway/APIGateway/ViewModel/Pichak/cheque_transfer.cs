@@ -45,7 +45,6 @@ namespace APIGateway.ViewModel.Pichak
             public string transferDate { get; set; }
             public int acceptTransfer { get; set; }
             public string description { get; set; }
-        
-
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

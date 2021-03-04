@@ -34,5 +34,6 @@ namespace APIGateway.ViewModel.Pichak
         public int bankCashingResult { get; set; }
         public string cashierBankCode { get; set; }
         public string cashierBranchCode { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }

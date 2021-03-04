@@ -21,6 +21,10 @@ namespace APIGateway.ViewModel.Pichak
 
     public class Cheque_accept_Param
     {
+        /// <summary>
+        /// این پراپرتی برای داینامیک کردن استفاده شده است
+        /// </summary>
+       // public InitialRestRequest initialRestRequest { get; set; }
         public string sayadId { get; set; }
         public int accept { get; set; }
         public string acceptDescription { get; set; }

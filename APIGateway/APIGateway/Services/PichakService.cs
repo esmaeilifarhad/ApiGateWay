@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using System.Linq;
@@ -23,10 +24,14 @@ namespace APIGateway.Services
         #region Initial
         //string _commonUrl = "https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/";
         string _commonUrl = APIGateway.Properties.Settings.Default.commonUrl;
-        private string _callerTerminalName { get { return "mobileBank"; } }
-        private string _callerBranchUserName { get { return ""; } }
-        private string _callerBranchCode { get { return "5501954"; } }
-        private string _customerAuthStatus { get { return "2"; } }
+        //private string _callerTerminalName { get { return "mobileBank"; } }
+        //private string _callerBranchUserName { get { return ""; } }
+        //private string _callerBranchCode { get { return "5501954"; } }
+        //private string _customerAuthStatus { get { return "2"; } }
+        private string _callerTerminalName { get; set; }
+        private string _callerBranchUserName { get; set; }
+        private string _callerBranchCode { get; set; }
+        private string _customerAuthStatus { get; set; }
         private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
 
         public PichakService()
@@ -54,8 +59,37 @@ namespace APIGateway.Services
             client.Proxy = new WebProxy();
             return client;
         }
+        //public void GetHeaders()
+        //{
+        //    HttpContext httpContext = HttpContext.Current;
+        //    NameValueCollection headerList = httpContext.Request.Headers;
+        //    _callerTerminalName = headerList.Get("TerminalName");
+        //}
+        /// <summary>
+        /// Set Header to Fields
+        /// </summary>
+        public void GetHeaders()
+        {
+            HttpContext httpContext = HttpContext.Current;
+            NameValueCollection headerList = httpContext.Request.Headers;
+            _callerTerminalName = headerList.Get("TerminalName");
+            _callerBranchCode = headerList.Get("BranchCode");
+            _callerBranchUserName = headerList.Get("BranchUserName");
+            _customerAuthStatus = headerList.Get("AuthStatus");
+
+        }
         private RestRequest InitialRestRequest()
         {
+            GetHeaders();
+            //if (param == null)
+            //{
+            //    throw new ArgumentException(@"InitialRestRequest را پر نمایید لطفا پارمتر ");
+            //}
+            //_callerTerminalName =param.TerminalName;
+            //_callerBranchUserName = param.BranchUserName;
+            //_callerBranchCode = param.BranchCode;
+            //_customerAuthStatus = param.AuthStatus;
+
             var request = new RestRequest(Method.POST);
             request.AddHeader("callerTerminalName", _callerTerminalName);
             request.AddHeader("callerBranchUserName", _callerBranchUserName);
@@ -122,8 +156,6 @@ namespace APIGateway.Services
 
         }
 
-       
-
         private string GenerateSign(string pichakReqBody, string callerTerminalName, string callerBranchCode, string callerBranchUserName, string customerAuthStatus, string certificateThumbPrint)
         {
 
@@ -173,14 +205,6 @@ namespace APIGateway.Services
             }
 
         }
-
-      
-
-
-
-
-
-
 
         #endregion
 
@@ -270,7 +294,7 @@ namespace APIGateway.Services
             {
                 var client = InitialRestClient("cheque/issue");
                 var request = InitialRestRequest();
-
+                
                 var body = new
                 {
                     accountOwners = param.accountOwners,
@@ -521,7 +545,7 @@ namespace APIGateway.Services
             var client = InitialRestClient("cashing/lock-cheque-for-cashing");
             var request = InitialRestRequest();
 
- 
+
             var body = new
             {
                 sayadId = param.sayadId,

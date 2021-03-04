@@ -26,5 +26,6 @@ namespace APIGateway.ViewModel.Pichak
         public string cancelDescription { get; set; }
         public cheque_cancel_Canceller canceller { get; set; }
         public cheque_cancel_CancellerAgent cancellerAgent { get; set; }
+       // public InitialRestRequest initialRestRequest { get; internal set; }
     }
 }
