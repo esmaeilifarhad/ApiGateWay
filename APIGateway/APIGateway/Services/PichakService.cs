@@ -24,15 +24,17 @@ namespace APIGateway.Services
         #region Initial
         //string _commonUrl = "https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/";
         string _commonUrl = APIGateway.Properties.Settings.Default.commonUrl;
-        //private string _callerTerminalName { get { return "mobileBank"; } }
-        //private string _callerBranchUserName { get { return ""; } }
-        //private string _callerBranchCode { get { return "5501954"; } }
-        //private string _customerAuthStatus { get { return "2"; } }
-        private string _callerTerminalName { get; set; }
-        private string _callerBranchUserName { get; set; }
-        private string _callerBranchCode { get; set; }
-        private string _customerAuthStatus { get; set; }
-        private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
+        private string _callerTerminalName { get { return "mobileBank"; } }
+        private string _callerBranchUserName { get { return ""; } }
+        private string _callerBranchCode { get { return "5501954"; } }
+        private string _customerAuthStatus { get { return "2"; } }
+        //private string _callerTerminalName { get; set; }
+        //private string _callerBranchUserName { get; set; }
+        //private string _callerBranchCode { get; set; }
+        //private string _customerAuthStatus { get; set; }
+        //private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
+        private string _certificateThumbPrint { get { return "d2b202615d70ef521a81e939c6219830bf00f4aa"; } }
+
 
         public PichakService()
         {
@@ -54,7 +56,8 @@ namespace APIGateway.Services
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
 
 
-            X509Certificate2 certificate = new X509Certificate2(pathCertFile("pichak_BankerNet", "certificatePichakNetTest"), "testPi@p@ssw0rd");
+            //X509Certificate2 certificate = new X509Certificate2(pathCertFile("pichak_BankerNet", "certificatePichakNetTest"), "testPi@p@ssw0rd");
+            X509Certificate2 certificate = new X509Certificate2(pathCertFile("Operation/Net", "CertificatePichakNet"), "Pi@p@ssw0rd");
             client.ClientCertificates = new X509CertificateCollection() { certificate };
             client.Proxy = new WebProxy();
             return client;
@@ -72,15 +75,16 @@ namespace APIGateway.Services
         {
             HttpContext httpContext = HttpContext.Current;
             NameValueCollection headerList = httpContext.Request.Headers;
-            _callerTerminalName = headerList.Get("TerminalName");
-            _callerBranchCode = headerList.Get("BranchCode");
-            _callerBranchUserName = headerList.Get("BranchUserName");
-            _customerAuthStatus = headerList.Get("AuthStatus");
+            //_callerTerminalName = headerList.Get("TerminalName");
+            //_callerBranchCode = headerList.Get("BranchCode");
+            //_callerBranchUserName = headerList.Get("BranchUserName");
+            //_customerAuthStatus = headerList.Get("AuthStatus");
 
         }
         private RestRequest InitialRestRequest()
         {
-            GetHeaders();
+            //GetHeaders();
+
             //if (param == null)
             //{
             //    throw new ArgumentException(@"InitialRestRequest را پر نمایید لطفا پارمتر ");
@@ -174,6 +178,10 @@ namespace APIGateway.Services
             {
                 var certCollectionStore = new X509Store(StoreName.My, StoreLocation.LocalMachine);
                 certCollectionStore.Open(OpenFlags.ReadOnly);
+                foreach (var item in certCollectionStore.Certificates)
+                {
+                    UtilityAndServices.Utility.Utility.CreateLog("Thumbprint" + item.Thumbprint);
+                }
                 var collection = certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                 if (collection.Count == 0)
                 {
@@ -182,6 +190,7 @@ namespace APIGateway.Services
                     certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                     collection = certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                 }
+                UtilityAndServices.Utility.Utility.CreateLog("Count Certificates" + collection.Count.ToString());
                 var certificate = collection[0];
                 certCollectionStore.Close();
 
@@ -195,7 +204,7 @@ namespace APIGateway.Services
 
                 var options = new JwtOptions { DetachPayload = detachPayload };
                 var token = JWT.Encode(payload, certificate.GetRSAPrivateKey(), JwsAlgorithm.RS256, extraHeaders, options: options);
-
+     
                 return token;
             }
             catch (Exception ex)

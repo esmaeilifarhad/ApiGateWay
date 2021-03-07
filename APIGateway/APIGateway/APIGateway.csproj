@@ -1010,6 +1010,8 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="PFXFiles\Operation\net\Pass.txt" />
+    <Content Include="PFXFiles\Operation\Pass.txt" />
     <Content Include="PFXFiles\Pichak_BankerApp\Pass key.txt" />
     <Content Include="PFXFiles\pichak_BankerNet\Pass key.txt" />
     <Content Include="Scripts\bootstrap.js" />
@@ -1038,7 +1040,6 @@
     <None Include="Connected Services\YaghutService\soap_en.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="PFXFiles\Pichak_BankerApp.rar" />
     <Content Include="PFXFiles\Pichak_BankerApp\certificateAppTest.cer" />
     <Content Include="PFXFiles\Pichak_BankerApp\certificatePichakAppTest.pfx" />
     <Content Include="PFXFiles\Pichak_BankerApp\Document.pdf" />
@@ -1046,6 +1047,12 @@
     <Content Include="PFXFiles\pichak_BankerNet\certificate%281%29.cer" />
     <Content Include="PFXFiles\pichak_BankerNet\certificatePichakNetTest.pfx" />
     <Content Include="PFXFiles\pichak_BankerNet\Document.pdf" />
+    <Content Include="PFXFiles\Operation\app\certificatePichakApp.cer" />
+    <Content Include="PFXFiles\Operation\app\certificatePichakApp.der" />
+    <Content Include="PFXFiles\Operation\app\CertificatePichakApp.pfx" />
+    <Content Include="PFXFiles\Operation\net\CertificatePichakNet.cer" />
+    <Content Include="PFXFiles\Operation\net\CertificatePichakNet.der" />
+    <Content Include="PFXFiles\Operation\net\CertificatePichakNet.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
