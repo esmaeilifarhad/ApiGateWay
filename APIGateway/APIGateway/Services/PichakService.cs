@@ -32,8 +32,9 @@ namespace APIGateway.Services
         //private string _callerBranchUserName { get; set; }
         //private string _callerBranchCode { get; set; }
         //private string _customerAuthStatus { get; set; }
-        //private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
-        private string _certificateThumbPrint { get { return "d2b202615d70ef521a81e939c6219830bf00f4aa"; } }
+        // private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
+        //private string _certificateThumbPrint { get { return "d2b202615d70ef521a81e939c6219830bf00f4aa"; } }
+        private string _certificateThumbPrint = APIGateway.Properties.Settings.Default.certificateThumbPrint;
 
 
         public PichakService()
@@ -48,16 +49,23 @@ namespace APIGateway.Services
         private RestClient InitialRestClient(string url)
         {
             var client = new RestClient(_commonUrl + url);
-            client.Authenticator = new HttpBasicAuthenticator("EghtesadNovin", "E9ht3$@dN0v!n");
+            client.Authenticator = new HttpBasicAuthenticator(APIGateway.Properties.Settings.Default.UserNameAuthen, APIGateway.Properties.Settings.Default.PasswordAuthen);
+            // client.Authenticator = new HttpBasicAuthenticator("EghtesadNovin", "E9ht3$@dN0v!n");
+            // client.Authenticator = new HttpBasicAuthenticator("BEGNIRTHXXX", "A3#ujT4_m:;.");
+
             client.Timeout = -1;
+
+            System.Net.ServicePointManager.ServerCertificateValidationCallback += (se, cert, chain, sslerror) => { return true; };
 
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.DefaultConnectionLimit = 9999;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
 
 
-            //X509Certificate2 certificate = new X509Certificate2(pathCertFile("pichak_BankerNet", "certificatePichakNetTest"), "testPi@p@ssw0rd");
-            X509Certificate2 certificate = new X509Certificate2(pathCertFile("Operation/Net", "CertificatePichakNet"), "Pi@p@ssw0rd");
+
+
+            // X509Certificate2 certificate = new X509Certificate2(pathCertFile("pichak_BankerNet","certificatePichakNetTest"), "testPi@p@ssw0rd");
+            X509Certificate2 certificate = new X509Certificate2(pathCertFile(APIGateway.Properties.Settings.Default.PathCertFolder, APIGateway.Properties.Settings.Default.PathCertFile), APIGateway.Properties.Settings.Default.PathCertPass);
             client.ClientCertificates = new X509CertificateCollection() { certificate };
             client.Proxy = new WebProxy();
             return client;
@@ -204,7 +212,7 @@ namespace APIGateway.Services
 
                 var options = new JwtOptions { DetachPayload = detachPayload };
                 var token = JWT.Encode(payload, certificate.GetRSAPrivateKey(), JwsAlgorithm.RS256, extraHeaders, options: options);
-     
+
                 return token;
             }
             catch (Exception ex)
@@ -303,7 +311,7 @@ namespace APIGateway.Services
             {
                 var client = InitialRestClient("cheque/issue");
                 var request = InitialRestRequest();
-                
+
                 var body = new
                 {
                     accountOwners = param.accountOwners,
@@ -379,7 +387,16 @@ namespace APIGateway.Services
             IRestResponse response = client.Execute(request);
             if (response.IsSuccessful == false)
             {
-                return response.Content;
+                if (response.Content == "")
+                {
+                    throw new ArgumentException(response.ErrorMessage);
+                    //  return response.ErrorMessage;
+                }
+                else
+                {
+                    return response.Content;
+                }
+
                 //ViewModel.Pichak.Error error = JsonConvert.DeserializeObject<ViewModel.Pichak.Error>(response.Content);
                 // return error;
             }
@@ -623,7 +640,7 @@ namespace APIGateway.Services
         /// <summary>
         /// سرویس انتقال چک
         /// </summary>
-      
+
         /// <summary>
         /// سرویس استعلام چک توسط دارنده
         /// </summary>
@@ -658,7 +675,7 @@ namespace APIGateway.Services
         /// <summary>
         /// سرویس استعلام چک توسط صادرکننده
         /// </summary>
-     
+
         /// <summary>
         /// سرویس استعلام نقد شوندگی
         /// </summary>
@@ -853,15 +870,15 @@ namespace APIGateway.Services
 
 
 
-sayadId=param.sayadId,
-reasonCode=param.reasonCode,
-blockerAgent=param.blockerAgent,
-blocker=param.blocker,
-requestDate=param.requestDate,
- letterNumber=param.letterNumber,
-letterDate=param.letterDate
+                    sayadId = param.sayadId,
+                    reasonCode = param.reasonCode,
+                    blockerAgent = param.blockerAgent,
+                    blocker = param.blocker,
+                    requestDate = param.requestDate,
+                    letterNumber = param.letterNumber,
+                    letterDate = param.letterDate
 
-            };
+                };
                 //add Sign
                 var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
                 request.AddHeader("x-jws-signature", stringSign);
@@ -906,12 +923,12 @@ letterDate=param.letterDate
 
 
 
-  sayadId=param.sayadId,
-unblockerAgent=param.unblockerAgent,
-unblocker=param.unblocker,
-requestDate=param.requestDate,
-letterNumber=param.letterNumber,
-letterDate=param.letterDate
+                    sayadId = param.sayadId,
+                    unblockerAgent = param.unblockerAgent,
+                    unblocker = param.unblocker,
+                    requestDate = param.requestDate,
+                    letterNumber = param.letterNumber,
+                    letterDate = param.letterDate
 
 
                 };

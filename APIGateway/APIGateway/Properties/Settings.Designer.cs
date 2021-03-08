@@ -36,16 +36,6 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<RSAKeyValue><Modulus>0k3lCzFiZwg/njyoMR0Jkcs6xRfSR7p766VWAm266V24lYPBxZgLxuuxQNFAj+ReSMJ5joUIT24PKQLSVmzvoXUTLv6FpM3F5CAN8xhljMPFA+T70e8aNUzKGmxQeGFmDIXw/D6d6Rz+3ryTe/GAP3hA1T6BtEt96IVLhlK1DLsWhlO3wv7Zj9DlYUH4vpwn81eA0dwsTamUmAl8c4RaXuUHsyHUfnZVYpK3l3T1ch5BGpxsvL15gNGBHYM+Xl8Z0dcCH1oVDYLa9GNdBQ3KjI00TiDYhWtngUGeXHwcIPRT3/ETn8JuX+ZKHI2Tp9h0oq9z74cN9UK2RwSn+upf1Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
-")]
-        public string PublicKey {
-            get {
-                return ((string)(this["PublicKey"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<RSAKeyValue><Modulus>0k3lCzFiZwg/njyoMR0Jkcs6xRfSR7p766VWAm266V24lYPBxZgLxuuxQNF" +
             "Aj+ReSMJ5joUIT24PKQLSVmzvoXUTLv6FpM3F5CAN8xhljMPFA+T70e8aNUzKGmxQeGFmDIXw/D6d6Rz" +
             "+3ryTe/GAP3hA1T6BtEt96IVLhlK1DLsWhlO3wv7Zj9DlYUH4vpwn81eA0dwsTamUmAl8c4RaXuUHsyH" +
@@ -84,10 +74,74 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://pichak.nibn.ir:9911/api/pichak/")]
         public string commonUrl {
             get {
                 return ((string)(this["commonUrl"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<RSAKeyValue><Modulus>0k3lCzFiZwg/njyoMR0Jkcs6xRfSR7p766VWAm266V24lYPBxZgLxuuxQNFAj+ReSMJ5joUIT24PKQLSVmzvoXUTLv6FpM3F5CAN8xhljMPFA+T70e8aNUzKGmxQeGFmDIXw/D6d6Rz+3ryTe/GAP3hA1T6BtEt96IVLhlK1DLsWhlO3wv7Zj9DlYUH4vpwn81eA0dwsTamUmAl8c4RaXuUHsyHUfnZVYpK3l3T1ch5BGpxsvL15gNGBHYM+Xl8Z0dcCH1oVDYLa9GNdBQ3KjI00TiDYhWtngUGeXHwcIPRT3/ETn8JuX+ZKHI2Tp9h0oq9z74cN9UK2RwSn+upf1Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+")]
+        public string PublicKey {
+            get {
+                return ((string)(this["PublicKey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("d2b202615d70ef521a81e939c6219830bf00f4aa")]
+        public string certificateThumbPrint {
+            get {
+                return ((string)(this["certificateThumbPrint"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("BEGNIRTHXXX")]
+        public string UserNameAuthen {
+            get {
+                return ((string)(this["UserNameAuthen"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("A3#ujT4_m:;.")]
+        public string PasswordAuthen {
+            get {
+                return ((string)(this["PasswordAuthen"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Operation\\Net")]
+        public string PathCertFolder {
+            get {
+                return ((string)(this["PathCertFolder"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CertificatePichakNet")]
+        public string PathCertFile {
+            get {
+                return ((string)(this["PathCertFile"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Pi@p@ssw0rd")]
+        public string PathCertPass {
+            get {
+                return ((string)(this["PathCertPass"]));
             }
         }
     }
