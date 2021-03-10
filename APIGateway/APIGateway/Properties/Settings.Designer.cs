@@ -25,17 +25,6 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("User Id=software_shahab;Password=Shahab123;Data Source=(DESCRIPTION =    (ADDRESS" +
-            " = (PROTOCOL = TCP)(HOST = 192.168.50.62)(PORT = 1525))    (CONNECT_DATA =      " +
-            "(SERVER = DEDICATED)      (SERVICE_NAME = DBTEST12.enb.local)    )  )")]
-        public string oradb {
-            get {
-                return ((string)(this["oradb"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<RSAKeyValue><Modulus>0k3lCzFiZwg/njyoMR0Jkcs6xRfSR7p766VWAm266V24lYPBxZgLxuuxQNF" +
             "Aj+ReSMJ5joUIT24PKQLSVmzvoXUTLv6FpM3F5CAN8xhljMPFA+T70e8aNUzKGmxQeGFmDIXw/D6d6Rz" +
             "+3ryTe/GAP3hA1T6BtEt96IVLhlK1DLsWhlO3wv7Zj9DlYUH4vpwn81eA0dwsTamUmAl8c4RaXuUHsyH" +
@@ -69,15 +58,6 @@ namespace APIGateway.Properties {
         public string LoginPass {
             get {
                 return ((string)(this["LoginPass"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pichak.nibn.ir:9911/api/pichak/")]
-        public string commonUrl {
-            get {
-                return ((string)(this["commonUrl"]));
             }
         }
         
@@ -142,6 +122,26 @@ namespace APIGateway.Properties {
         public string PathCertPass {
             get {
                 return ((string)(this["PathCertPass"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("User Id=software_shahab;Password=Shahab123;Data Source=(DESCRIPTION =    (ADDRESS" +
+            " = (PROTOCOL = TCP)(HOST = 172.50.251.146)(PORT = 1521))    (CONNECT_DATA =     " +
+            " (SERVER = DEDICATED)      (SERVICE_NAME = ORCL.ENB.LOCAL)    )  )")]
+        public string oradb {
+            get {
+                return ((string)(this["oradb"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://pichak.nibn.ir/api/pichak/")]
+        public string commonUrl {
+            get {
+                return ((string)(this["commonUrl"]));
             }
         }
     }
