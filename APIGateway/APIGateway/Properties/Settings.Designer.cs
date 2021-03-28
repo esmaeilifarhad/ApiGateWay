@@ -73,7 +73,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("d2b202615d70ef521a81e939c6219830bf00f4aa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("d5877653ff221c4bbad3032aa4f76d588d6bceaf")]
         public string certificateThumbPrint {
             get {
                 return ((string)(this["certificateThumbPrint"]));
@@ -82,7 +82,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("BEGNIRTHXXX")]
+        [global::System.Configuration.DefaultSettingValueAttribute("EghtesadNovin")]
         public string UserNameAuthen {
             get {
                 return ((string)(this["UserNameAuthen"]));
@@ -91,7 +91,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("A3#ujT4_m:;.")]
+        [global::System.Configuration.DefaultSettingValueAttribute("E9ht3$@dN0v!n")]
         public string PasswordAuthen {
             get {
                 return ((string)(this["PasswordAuthen"]));
@@ -100,7 +100,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Operation\\Net")]
+        [global::System.Configuration.DefaultSettingValueAttribute("pichak_BankerNet")]
         public string PathCertFolder {
             get {
                 return ((string)(this["PathCertFolder"]));
@@ -109,7 +109,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CertificatePichakNet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("certificatePichakNetTest")]
         public string PathCertFile {
             get {
                 return ((string)(this["PathCertFile"]));
@@ -118,7 +118,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Pi@p@ssw0rd")]
+        [global::System.Configuration.DefaultSettingValueAttribute("testPi@p@ssw0rd")]
         public string PathCertPass {
             get {
                 return ((string)(this["PathCertPass"]));
@@ -138,7 +138,7 @@ namespace APIGateway.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pichak.nibn.ir/api/pichak/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://Eghtesadnovin.pichak.nibn.ir:9911/api/pichak/")]
         public string commonUrl {
             get {
                 return ((string)(this["commonUrl"]));
