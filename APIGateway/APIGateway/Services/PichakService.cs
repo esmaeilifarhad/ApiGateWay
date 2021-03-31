@@ -28,12 +28,7 @@ namespace APIGateway.Services
         private string _callerBranchUserName { get { return ""; } }
         private string _callerBranchCode { get { return "5501954"; } }
         private string _customerAuthStatus { get { return "2"; } }
-        //private string _callerTerminalName { get; set; }
-        //private string _callerBranchUserName { get; set; }
-        //private string _callerBranchCode { get; set; }
-        //private string _customerAuthStatus { get; set; }
-        // private string _certificateThumbPrint { get { return "d5877653ff221c4bbad3032aa4f76d588d6bceaf"; } }
-        //private string _certificateThumbPrint { get { return "d2b202615d70ef521a81e939c6219830bf00f4aa"; } }
+        
         private string _certificateThumbPrint = APIGateway.Properties.Settings.Default.certificateThumbPrint;
 
 
@@ -89,6 +84,10 @@ namespace APIGateway.Services
             //_customerAuthStatus = headerList.Get("AuthStatus");
 
         }
+        /// <summary>
+        /// Header Request
+        /// </summary>
+        /// <returns></returns>
         private RestRequest InitialRestRequest()
         {
             //GetHeaders();
@@ -186,10 +185,10 @@ namespace APIGateway.Services
             {
                 var certCollectionStore = new X509Store(StoreName.My, StoreLocation.LocalMachine);
                 certCollectionStore.Open(OpenFlags.ReadOnly);
-                foreach (var item in certCollectionStore.Certificates)
-                {
-                    UtilityAndServices.Utility.Utility.CreateLog("Thumbprint" + item.Thumbprint);
-                }
+                //foreach (var item in certCollectionStore.Certificates)
+                //{
+                //    UtilityAndServices.Utility.Utility.CreateLog("Thumbprint" + item.Thumbprint);
+                //}
                 var collection = certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                 if (collection.Count == 0)
                 {
@@ -198,7 +197,7 @@ namespace APIGateway.Services
                     certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                     collection = certCollectionStore.Certificates.Find(X509FindType.FindByThumbprint, certificateFingerPrint, false);
                 }
-                UtilityAndServices.Utility.Utility.CreateLog("Count Certificates" + collection.Count.ToString());
+               // UtilityAndServices.Utility.Utility.CreateLog("Count Certificates" + collection.Count.ToString());
                 var certificate = collection[0];
                 certCollectionStore.Close();
 
@@ -930,6 +929,50 @@ namespace APIGateway.Services
                     letterNumber = param.letterNumber,
                     letterDate = param.letterDate
 
+
+                };
+                //add Sign
+                var stringSign = GenerateSign(JsonConvert.SerializeObject(body), _callerTerminalName, _callerBranchCode, _callerBranchUserName, _customerAuthStatus, _certificateThumbPrint.ToUpper());
+                request.AddHeader("x-jws-signature", stringSign);
+                //----------------------------------------
+                request.AddJsonBody(body);
+                IRestResponse response = client.Execute(request);
+                if (response.IsSuccessful == false)
+                {
+
+                    if (response.ErrorException != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorException.ToString());
+
+                    if (response.ErrorMessage != null)
+                        UtilityAndServices.Utility.Utility.CreateLog(response.ErrorMessage.ToString());
+
+                    return response.Content;
+                }
+
+                return response.Content;
+            }
+            catch (Exception ex)
+            {
+
+                throw new ArgumentException(ex.Message);
+            }
+        }
+        /// <summary>
+        /// استعالم نام دریافت کننده چک
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public string receiver_inquiry(receiver_inquiry_Root param)
+        {
+            try
+            {
+                var client = InitialRestClient("inquiry/receiver-inquiry");
+                var request = InitialRestRequest();
+
+                var body = new
+                {
+                    sayadId = param.sayadId,
+                    receiversId = param.receiversId
 
                 };
                 //add Sign

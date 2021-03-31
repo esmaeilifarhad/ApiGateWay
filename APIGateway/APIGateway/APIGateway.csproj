@@ -247,6 +247,7 @@
     <Compile Include="ViewModel\Pichak\inquiry_cheque.cs" />
     <Compile Include="ViewModel\Pichak\inquiry_issuer_inquiry.cs" />
     <Compile Include="ViewModel\Pichak\inquiry_transfer.cs" />
+    <Compile Include="ViewModel\Pichak\receiver_inquiry.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

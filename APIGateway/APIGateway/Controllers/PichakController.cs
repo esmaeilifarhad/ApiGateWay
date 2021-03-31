@@ -20,41 +20,41 @@ namespace APIGateway.Controllers
         }
   
    
-        [HttpPost]
-        //دریافت کد شهاب از طریق کد مشتری 
-        public IHttpActionResult CallShahabCode(ParamIn input)
-        {
-            try
-            {
-                ParamOut paramOut = new ParamOut();
-                using (OracleConnection conn = new OracleConnection(APIGateway.Properties.Settings.Default.oradb))
-                {
-                    conn.Open();
-                    OracleCommand cmd = new OracleCommand();
-                    cmd.CommandTimeout = 600;
-                    cmd.Connection = conn;
-                    cmd.CommandText = string.Format(@"select * from Customer_Shahab where cfcifno ={0} ", input.cif);
-                    //cmd.CommandText = string.Format(@"select * from customer_shahab_info");
+        //[HttpPost]
+        ////دریافت کد شهاب از طریق کد مشتری 
+        //public IHttpActionResult CallShahabCode(ParamIn input)
+        //{
+        //    try
+        //    {
+        //        ParamOut paramOut = new ParamOut();
+        //        using (OracleConnection conn = new OracleConnection(APIGateway.Properties.Settings.Default.oradb))
+        //        {
+        //            conn.Open();
+        //            OracleCommand cmd = new OracleCommand();
+        //            cmd.CommandTimeout = 600;
+        //            cmd.Connection = conn;
+        //            cmd.CommandText = string.Format(@"select * from Customer_Shahab where cfcifno ={0} ", input.cif);
+        //            //cmd.CommandText = string.Format(@"select * from customer_shahab_info");
 
 
-                    cmd.CommandType = CommandType.Text;
-                    OracleDataReader dr = cmd.ExecuteReader();
+        //            cmd.CommandType = CommandType.Text;
+        //            OracleDataReader dr = cmd.ExecuteReader();
 
-                    while (dr.Read())
-                    {
-                        paramOut.CFCIFNO = dr["CFCIFNO"].ToString();
-                        paramOut.C1034SHAHBCOD = dr["C1034SHAHBCOD"].ToString();
-                    }
-                }
-                return Ok(paramOut);
-            }
-            catch (Exception ex)
-            {
+        //            while (dr.Read())
+        //            {
+        //                paramOut.CFCIFNO = dr["CFCIFNO"].ToString();
+        //                paramOut.C1034SHAHBCOD = dr["C1034SHAHBCOD"].ToString();
+        //            }
+        //        }
+        //        return Ok(paramOut);
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-        }
+        //}
         #region Pichak
         /// <summary>
         /// سرویس ثبت چک
@@ -288,9 +288,27 @@ namespace APIGateway.Controllers
             }
 
         }
+        /// <summary>
+        /// استعلام نام دریافت کننده چک
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public IHttpActionResult receiver_inquiry(ViewModel.Pichak.receiver_inquiry_Root root)
+        {
+            try
+            {
+                string username = User.Identity.Name;
+                var res = pichakService.receiver_inquiry(root);
+                var list = JsonConvert.DeserializeObject<object>(res);
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
 
+                return BadRequest(ex.ToString());
+            }
 
-
+        }
 
         #endregion
     }
