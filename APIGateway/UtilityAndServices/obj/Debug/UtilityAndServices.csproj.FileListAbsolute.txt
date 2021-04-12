@@ -31,3 +31,4 @@ E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csproj.CopyComplete
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.exe
 E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.pdb
+E:\project\ENB.ApiGateway\ApiGateWay-developer\APIGateway\UtilityAndServices\obj\Debug\UtilityAndServices.csprojAssemblyReference.cache
