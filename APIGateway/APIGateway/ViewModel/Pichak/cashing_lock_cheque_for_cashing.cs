@@ -27,7 +27,7 @@ namespace APIGateway.ViewModel.Pichak
         public List<cashing_lock_cheque_Holder> holders { get; set; }
         public cashing_lock_cheque_ChequeCarrier chequeCarrier { get; set; }
         public string fromIban { get; set; }
-        public int cashingAmount { get; set; }
+        public long cashingAmount { get; set; }
         public string cashingDueDate { get; set; }
         public string requestDate { get; set; }
         public int bounceCheque { get; set; }

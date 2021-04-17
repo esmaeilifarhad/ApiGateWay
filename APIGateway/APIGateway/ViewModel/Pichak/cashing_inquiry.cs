@@ -15,7 +15,7 @@ namespace APIGateway.ViewModel.Pichak
         public string sayadId { get; set; }
         public string serialNo { get; set; }
         public string fromIban { get; set; }
-        public int cashingAmount { get; set; }
+        public long cashingAmount { get; set; }
         public string cashingDueDate { get; set; }
         public int chequeType { get; set; }
         public int chequeMedia { get; set; }

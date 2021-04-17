@@ -65,7 +65,7 @@ namespace APIGateway.ViewModel.Pichak
         public string seriesNo { get; set; }
         public string serialNo { get; set; }
         public string fromIban { get; set; }
-        public int amount { get; set; }
+        public long amount { get; set; }
         public string description { get; set; }
         public string dueDate { get; set; }
         public string toIban { get; set; }
